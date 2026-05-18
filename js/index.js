@@ -34,6 +34,8 @@ function generarPaleta() {
 
         tarjeta.classList.add("color-card");
 
+        tarjeta.style.backgroundColor = color;
+
         const bloqueColor = document.createElement("div");
 
         bloqueColor.classList.add("color");
