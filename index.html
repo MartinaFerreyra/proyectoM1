@@ -13,43 +13,95 @@
   <h1>Generador de paletas</h1>
   </header>
 
-  <!-- Selector de tamaño -->
-  <section class="selector-tamano">
-    <p>Seleccionar tamaño de paleta:</p>
+ <!-- CONTROLES -->
+    <section class="controls">
 
-    <label>
-      <input type="radio" name="tamano" value="6" checked>
-      6 colores
-    </label>
+      <!-- CANTIDAD -->
+      <div class="control-grupo">
 
-    <label>
-      <input type="radio" name="tamano" value="8">
-      8 colores
-    </label>
+        <label for="cantidad">
+          Cantidad
+        </label>
 
-    <label>
-      <input type="radio" name="tamano" value="9">
-      9 colores
-    </label>
-  </section>
+        <select id="cantidad">
+
+          <option value="6">
+            6 colores
+          </option>
+
+          <option value="8" selected>
+            8 colores
+          </option>
+
+          <option value="9">
+            9 colores
+          </option>
+
+        </select>
+
+      </div>
+
+      <!-- FORMATO -->
+      <div class="control-grupo">
+
+        <label for="formato">
+          Formato
+        </label>
+
+        <select id="formato">
+
+          <option value="hex">
+            HEX
+          </option>
+
+          <option value="hsl">
+            HSL
+          </option>
+
+        </select>
+
+      </div>
+
+      <!-- MODO -->
+      <div class="control-grupo">
+
+        <label for="modo">
+          Tipo
+        </label>
+
+        <select id="modo">
+
+          <option value="random">
+            Aleatorio
+          </option>
+
+
+        </select>
+
+      </div>
+
+    </section>
 
 <main class="contenedor-main">
 
- <div class="contenedor-colores">
- <div class="color"style="background-color:rgba(255, 0, 0)"></div>
- <div class="color"style="background-color: rgba(0, 255, 0);"></div>
- <div class="color"style="background-color: rgba(0, 0, 255);"></div>
- <div class="color"style="background-color: rgba(255, 255, 0);"></div>
- <div class="color"style="background-color: rgba(255, 0, 255);"></div>
- <div class="color"style="background-color: rgba(0, 255, 255);"></div>
- <div class="color"style="background-color: rgba(255, 255, 255);"></div>
- <div class="color"style="background-color: rgba(0, 0, 0);"></div>
- <div class="color"style="background-color: rgba(128, 128, 128);"></div>
+ <!-- CONTENEDOR DINÁMICO -->
+    <section
+      class="palette-container"
+      id="paletteContainer">
+    </section>
 
+    <!-- BOTÓN -->
+    <button id="generar-paleta">
+      Generar paleta
+    </button>
 
-</div>
-<button id="generar-paleta">Generar paleta</button>
-</main>
+    <!-- TOOLTIP -->
+    <div class="tooltip">
+      Color copiado
+    </div>
+
+  </main>
+
 <script src="./js/index.js"></script>
 </body>
 </html>
