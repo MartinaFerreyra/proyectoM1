@@ -24,6 +24,15 @@ Aplicación web interactiva que permite generar paletas de colores aleatorias co
   - En tablets, los colores se muestran en 2 columnas
   - En dispositivos móviles, los colores se muestran en una sola columna
 
+## Demo del proyecto
+
+🔗 Deploy online:
+https://martinaferreyra.github.io/proyectoM1/
+
+## Repositorio
+
+🔗 GitHub:
+https://github.com/MartinaFerreyra/proyectoM1
 
 ## Tecnologías utilizadas
 
